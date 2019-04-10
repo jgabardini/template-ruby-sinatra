@@ -1,0 +1,26 @@
+<!doctype html>
+<html  lang="es">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <title>Pagina de Ejemplo</title>
+  </head>
+<body>
+  <p>Para copiar el codigo HMTL que te sirva</p> 
+  <form action="/template" method="POST" id="jugador">
+    <label>Nombre Jugador</label>
+    <input type="text" id="jugador_nombre" name="jugador_nombre"/>
+    <input type="submit" value="Iniciar Juego">
+  </form>
+
+<%if @contador>0%>
+  <p>Resultados</p>
+  Jugadores <div id="contador"><%=@contador%></div>
+  <table>
+    <th><td>Jugador</td></th>
+    <tr><td id="N_1">Pepe</td></tr>
+  </table>
+  <%end%>
+</body>
+</html>
