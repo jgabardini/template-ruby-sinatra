@@ -7,7 +7,7 @@ Sinatra::Application.app_file = File.join(File.dirname(__FILE__), *%w[.. .. app.
 
 require 'rspec/expectations'
 require 'capybara/cucumber'
-require 'capybara/poltergeist' #Javascript
+#require 'capybara/poltergeist' #Javascript
 
 
 class MyWorld
