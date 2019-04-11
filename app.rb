@@ -14,7 +14,7 @@ get '/template' do
 end
 
 post '/template' do
-    #@nombre= Params[:jugador_nombre]
+    @nombre= params[:jugador_nombre]
     @contador= 1
     erb :template
 end

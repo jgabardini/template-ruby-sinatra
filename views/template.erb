@@ -16,10 +16,14 @@
 
 <%if @contador>0%>
   <p>Resultados</p>
-  Jugadores <div id="contador"><%=@contador%></div>
-  <table>
-    <th><td>Jugador</td></th>
-    <tr><td id="N_1">Pepe</td></tr>
+  Jugadores: <span id="contador"><%=@contador%></span>
+  <table class="table">
+    <thead>
+    <tr>
+    <th>Jugador</th>
+    </tr>
+    </thead>
+    <tr><td id="N_1"><%=@nombre%></td></tr>
   </table>
   <%end%>
 </body>
